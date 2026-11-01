@@ -1,0 +1,12 @@
+- slug: literature
+  name: Literature
+  mark: "¶"
+  blurb: "Close readings, criticism, and original poems and prose."
+- slug: music
+  name: Music
+  mark: "♮"
+  blurb: "Writing about works, performances, and how we listen."
+- slug: philosophy
+  name: Philosophy
+  mark: "∴"
+  blurb: "Arguments, questions, and notes from reading the philosophers."
