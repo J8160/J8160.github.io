@@ -1,0 +1,16 @@
+<ol class="entries">
+  {% for post in include.posts %}
+  {% assign sec = site.data.sections | where: "slug", post.section | first %}
+  <li class="entry" data-section="{{ post.section }}">
+    <span class="mark" aria-hidden="true">{{ sec.mark }}</span>
+    <div class="entry-body">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+    </div>
+    <p class="entry-meta">
+      {% unless include.hide_section %}<span>{{ sec.name }}</span>{% endunless %}
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    </p>
+  </li>
+  {% endfor %}
+</ol>
