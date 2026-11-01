@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% assign sec = site.data.sections | where: "slug", page.section | first %}
+{% assign posts = site.posts | where: "section", page.section %}
+<section class="section-page" data-section="{{ page.section }}">
+  <header class="section-header">
+    <span class="mark" aria-hidden="true">{{ sec.mark }}</span>
+    <h1>{{ sec.name }}</h1>
+    <p>{{ sec.blurb }}</p>
+  </header>
+  {% if posts.size > 0 %}
+    {% include entries.html posts=posts hide_section=true %}
+  {% else %}
+    <p class="empty">Nothing here yet. The first piece is on its way.</p>
+  {% endif %}
+</section>
