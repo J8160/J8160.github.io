@@ -1,0 +1,21 @@
+# Your site's details. Change these first.
+title: "Jiahe Hu"
+tagline: "Essays and other writing on literature, music, and philosophy."
+author: "Jiahe Hu"
+
+# Leave everything below as it is.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+permalink: /writing/:title/
+future: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - new-post-template.md
