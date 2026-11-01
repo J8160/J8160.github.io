@@ -10,7 +10,7 @@ A personal site for writing on literature, music, and philosophy. GitHub Pages b
 4. Go to **Settings → Pages** and check that **Source** is set to **Deploy from a branch**, with the branch set to `main` and the folder to `/ (root)`. Click **Save** if you changed anything.
 5. After a minute or two, your site is live at `https://YOUR-USERNAME.github.io`.
 
-Before you share the link, change your name and tagline in `_config.yml`, and replace every `[bracketed]` passage in `about.md`.
+Before you share the link, check your name and tagline in `_config.yml`, and write your About page in `about.md`. That file has hidden prompts to get you started.
 
 ## Post something new
 
